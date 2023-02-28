@@ -3,6 +3,7 @@ import CashBackBanner from "../Components/CashBackBanner";
 import ChooseByBrand from "../Components/ChooseByBrand";
 import MostSelling from "../Components/MostSelling";
 import Navbar from "../Components/Navbar";
+import ServicesToHelp from "../Components/Service";
 import SeventyPercentSection from "../Components/SeventyPercent";
 import TodaysBestDeal from "../Components/TodaysBestDeals";
 import TodaysDeals from "../Components/TodaysDeals";
@@ -24,6 +25,7 @@ export default function HomePage() {
             <CashBackBanner />
             <MostSelling />
             <TrendingProducts />
+            <ServicesToHelp/>
         </>
     )
 }

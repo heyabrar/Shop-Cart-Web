@@ -1,6 +1,6 @@
 import { Box, Flex, Menu, MenuButton, MenuItem, MenuList, Text } from "@chakra-ui/react";
 import { BsTelephone } from 'react-icons/bs'
-import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
+import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 
 export default function TopMiniNav() {
     return (
@@ -15,8 +15,8 @@ export default function TopMiniNav() {
                     <Flex gap='10px'>
                         <Menu isLazy>
                             <MenuButton>
-                                <Flex justifyContent='center' aligitems='center' gap='2px' fontWeight='600'><Text>Eng</Text> <Text><MdOutlineKeyboardArrowDown/></Text></Flex>
-                                </MenuButton>
+                                <Flex justifyContent='center' aligitems='center' gap='2px' fontWeight='600'><Text>Eng</Text> <Text><MdOutlineKeyboardArrowDown /></Text></Flex>
+                            </MenuButton>
                             <MenuList color='black'>
                                 <MenuItem>Bangla</MenuItem>
                                 <MenuItem>Arabic</MenuItem>
@@ -26,7 +26,7 @@ export default function TopMiniNav() {
 
                         <Menu isLazy>
                             <MenuButton>
-                            <Flex justifyContent='center' aligitems='center' gap='2px' fontWeight='600'><Text>Location</Text> <Text><MdOutlineKeyboardArrowDown/></Text></Flex>
+                                <Flex justifyContent='center' aligitems='center' gap='2px' fontWeight='600'><Text>Location</Text> <Text><MdOutlineKeyboardArrowDown /></Text></Flex>
                             </MenuButton>
                             <MenuList color='black'>
                                 <MenuItem>Dhaka</MenuItem>

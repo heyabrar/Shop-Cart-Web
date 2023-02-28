@@ -1,34 +1,34 @@
-.BannerContent { 
+.BannerContent {
     position: relative;
     bottom: 550px;
     left: 120px;
 }
 
-.ZoomImageBox{
+.ZoomImageBox {
     transition: 1.5s all ease-in-out;
     overflow: hidden;
     margin: 0 auto;
     border-radius: 10px;
 }
 
-.ZoomImage{
+.ZoomImage {
     transition: 0.3s all ease-in-out;
 }
 
 .ZoomImage:hover {
     transform: scale(1.2);
-  }
+}
 
-@media(max-width:480px){
-    .BannerContent { 
+@media(max-width:480px) {
+    .BannerContent {
         bottom: 180px;
         left: 5px;
     }
 
 }
 
-@media (min-width : 768px) and (max-width : 1024px){
-    .BannerContent{
+@media (min-width : 768px) and (max-width : 1024px) {
+    .BannerContent {
         bottom: 280px;
         left: 20px;
     }

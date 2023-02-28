@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
-export default function CarouselComponent({ data, itemsBase, itemsMd, itemsLg }) {
+export default function CarouselComponent({ data, itemsBase, itemsMd, itemsLg}) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -31,14 +31,13 @@ export default function CarouselComponent({ data, itemsBase, itemsMd, itemsLg })
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
-          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
           autoPlaySpeed={2000}
           keyBoardControl={true}
-          customTransition="all .5"
+          customTransition="all .8"
           transitionDuration={500}
           containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          // deviceType={this.props.deviceType}
+          removeArrowOnDeviceType={["tablet", "mobile", "laptop"]}
+          // deviceType={deviceType}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
@@ -52,7 +51,7 @@ export default function CarouselComponent({ data, itemsBase, itemsMd, itemsLg })
                 <Text>{elem.price}</Text>
               </Flex>
               <Text fontSize={{ base: '12px', md: '15px' }} color='gray'>{elem.desc}</Text>
-              <Button border='1px solid black' bg='white' colorScheme='white' borderRadius='15px' color='black' size={{ base: 'sm', md: 'md' }} mt={{ base: '10px', md: '15px' }}>Add To Cart</Button>
+              <Button border='1px solid black' bg='white' _hover={{bg:'#003d29',color: 'white'}} borderRadius='15px' color='black' size={{ base: 'sm', md: 'md' }} mt={{ base: '10px', md: '15px' }}>Add To Cart</Button>
             </Box>
           })}
         </Carousel>

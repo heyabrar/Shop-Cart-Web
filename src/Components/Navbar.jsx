@@ -5,7 +5,6 @@ import { AiOutlineUser } from 'react-icons/ai'
 import { TbShoppingCartPlus } from 'react-icons/tb'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 
-
 export default function Navbar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const PopularCategories = [
@@ -88,7 +87,7 @@ export default function Navbar() {
                             <InputGroup>
                                 <InputRightElement
                                     pointerEvents='cursor'
-                                    children={<SearchIcon color='black'  cursor='pointer'/>}
+                                    children={<SearchIcon color='black' cursor='pointer' />}
                                 />
                                 <Input type='text' placeholder='Search' borderRadius='15px' width='300px' border='1px solid gray' />
                             </InputGroup>
@@ -110,19 +109,30 @@ export default function Navbar() {
                 </Flex>
                 {isOpen ? (
                     <Box pb={4} display={{ lg: 'none' }} >
-                        <Stack as={'nav'} spacing={4}>
-                            <InputGroup>
-                                <InputLeftElement
-                                    pointerEvents='none'
-                                    children={<SearchIcon color='gray.300' />}
-                                />
-                                <Input type='text' placeholder='Search' focusBorderColor='#ea4c89' />
-                            </InputGroup>
-                            <Text>Inspiration</Text>
-                            <Text>Find Work</Text>
-                            <Text>Learn Design</Text>
-                            <Text>Go Pro</Text>
-                            <Text>Hire Designers</Text>
+                        <Stack as={'nav'} spacing={5}>
+                            <Menu isLazy>
+                                <MenuButton>
+                                    <Flex aligitems='center' gap='2px' fontWeight='600'><Text>Categories</Text> <Text><MdOutlineKeyboardArrowDown /></Text></Flex>
+                                </MenuButton>
+                                <MenuList color='black' padding='10px'>
+                                    <Text>Popular Categories</Text>
+                                    <hr />
+                                    <SimpleGrid columns={[1, 1, 2, 2]} gap='30px'>
+                                        {PopularCategories.length > 0 && PopularCategories.map((elem) => {
+                                            return <Flex bg='#f5f6f6' padding='5px' gap='15px' mt='10px'>
+                                                <Image src={elem.image} />
+                                                <Box cursor='pointer'>
+                                                    <Text>{elem.title}</Text>
+                                                    <Text fontSize='12px' fontWeight='400' color='gray'>{elem.stock}</Text>
+                                                </Box>
+                                            </Flex>
+                                        })}
+                                    </SimpleGrid>
+                                </MenuList>
+                            </Menu>
+                            <Text cursor='pointer'>Deals</Text>
+                            <Text cursor='pointer'>What's New</Text>
+                            <Text cursor='pointer'>Delivery</Text>
                         </Stack>
                     </Box>
                 ) : null}

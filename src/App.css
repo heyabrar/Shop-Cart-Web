@@ -1,0 +1,20 @@
+.BannerContent { 
+    position: relative;
+    bottom: 550px;
+    left: 120px;
+}
+
+@media(max-width:480px){
+    .BannerContent { 
+        bottom: 180px;
+        left: 5px;
+    }
+
+}
+
+@media (min-width : 768px) and (max-width : 1024px){
+    .BannerContent{
+        bottom: 280px;
+        left: 20px;
+    }
+}

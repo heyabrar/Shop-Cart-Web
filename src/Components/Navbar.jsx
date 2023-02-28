@@ -52,8 +52,8 @@ export default function Navbar() {
                 <Flex h={16} alignItems='center' width='85%' m='auto' gap='10px'>
                     <IconButton color='black' size='md' bg='white' icon={isOpen ? <CloseIcon /> : <HamburgerIcon fontSize='30px' color='#6e6d7a' />} aria-label='Open Menu' display={{ lg: 'none' }} onClick={isOpen ? onClose : onOpen} />
 
-                    <Box width={{ base: "20%", md: '13%', lg: '10%' }} justifyContent={'center'} m='auto'>
-                        <Image src='https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg' width='160px' m='auto' />
+                    <Box width={{ base: "40%", md: '30%', lg: '10%' }} justifyContent={'center'} m='auto'>
+                        <Image src='https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg' width={{base: '200px',lg:'160px'}} m='auto' />
                     </Box>
 
                     <Flex as={'nav'} display={{ base: 'none', md: 'none', lg: 'flex' }} spacing={4} gap='10px' w={{ base: '', md: '90%', lg: '95%' }} alignItems='center' justifyContent='space-between'>

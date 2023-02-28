@@ -11,23 +11,56 @@ import TodaysDeals from "../Components/TodaysDeals";
 import TopCategories from "../Components/TopCategories";
 import TrendingProducts from "../Components/TrendingProducts";
 import WeeklyPopular from "../Components/WeeklyPopular";
+import Fade from 'react-reveal/Fade';
 
 export default function HomePage() {
     return (
         <>
             <Navbar />
             <Banner />
-            <TopCategories />
-            <TodaysBestDeal />
-            <ChooseByBrand />
-            <SeventyPercentSection />
-            <WeeklyPopular />
-            <TodaysDeals />
-            <CashBackBanner />
-            <MostSelling />
-            <TrendingProducts />
-            <ServicesToHelp/>
-            <Footer/>
+            <Fade bottom>
+                <TopCategories />
+            </Fade>
+
+            <Fade bottom>
+                <TodaysBestDeal />
+            </Fade>
+
+            <Fade bottom>
+                <ChooseByBrand />
+            </Fade>
+
+            <Fade bottom>
+                <SeventyPercentSection />
+            </Fade>
+
+            <Fade bottom>
+                <WeeklyPopular />
+            </Fade>
+
+            <Fade bottom>
+                <TodaysDeals />
+            </Fade>
+
+            <Fade bottom>
+                <CashBackBanner />
+            </Fade>
+
+            <Fade bottom>
+                <MostSelling />
+            </Fade>
+
+            <Fade bottom>
+                <TrendingProducts />
+            </Fade>
+
+            <Fade bottom>
+                <ServicesToHelp />
+            </Fade>
+
+            <Fade bottom>
+                <Footer />
+            </Fade>
         </>
     )
 }

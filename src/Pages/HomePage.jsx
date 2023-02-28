@@ -1,6 +1,7 @@
 import Banner from "../Components/Banner";
 import CashBackBanner from "../Components/CashBackBanner";
 import ChooseByBrand from "../Components/ChooseByBrand";
+import Footer from "../Components/Footer";
 import MostSelling from "../Components/MostSelling";
 import Navbar from "../Components/Navbar";
 import ServicesToHelp from "../Components/Service";
@@ -26,6 +27,7 @@ export default function HomePage() {
             <MostSelling />
             <TrendingProducts />
             <ServicesToHelp/>
+            <Footer/>
         </>
     )
 }

@@ -1,4 +1,7 @@
 import { Box, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { FiGift } from 'react-icons/fi'
+import { AiOutlineQuestionCircle } from 'react-icons/ai'
+import { BsFillBagFill } from 'react-icons/bs'
 
 export default function Footer() {
     const payments = [
@@ -118,6 +121,35 @@ export default function Footer() {
                     })}
                 </SimpleGrid>
             </Box>
+
+            <Flex width={{ base: '90%', lg: '80%' }} m='auto' justifyContent='space-between' alignItems={{ base: 'left' }} mt='50px' marginBottom='30px' direction={{ base: 'column', md: 'row' }}>
+                <SimpleGrid columns={[3,2,3,3]} fontSize={{base: '14px'}}> 
+                    <Flex justifyContent='center' alignItems='center' gap='10px'>
+                        <Text color='#c44784'><BsFillBagFill /> </Text>
+                        <Text>Become Seller </Text>
+                    </Flex>
+
+                    <Flex justifyContent='center' alignItems='center' gap='10px'>
+                        <Text color='#c44784'><FiGift /> </Text>
+                        <Text >Gift Cards</Text>
+                    </Flex>
+
+                    <Flex justifyContent='center' alignItems='center' gap='10px'>
+                        <Text color='#c44784'><AiOutlineQuestionCircle /> </Text>
+                        <Text>Help Center </Text>
+                    </Flex> 
+                </SimpleGrid>
+
+                <Flex gap='20px' mt='10px'>
+                    <Text>Terms of Service</Text>
+                    <Text>Privacy & Policy</Text>
+                </Flex>
+
+                <Box mt='15px'>
+                    <Text>All Right reserved by Musemind | 2022 </Text>
+                </Box>
+
+            </Flex>
         </>
     )
 }

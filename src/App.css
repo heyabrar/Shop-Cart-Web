@@ -5,18 +5,18 @@
 }
 
 .ZoomImageBox{
-    transition: 0.5s all ease-in-out;
+    transition: 1.5s all ease-in-out;
     overflow: hidden;
     margin: 0 auto;
     border-radius: 10px;
 }
 
 .ZoomImage{
-    transition: 0.5s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 
 .ZoomImage:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 
 @media(max-width:480px){

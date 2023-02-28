@@ -46,7 +46,7 @@ export default function CarouselComponent({ data, itemsBase, itemsMd, itemsLg}) 
               <Box className="ZoomImageBox" bg='#f5f6f6'>
                 <Image src={elem.img} m='auto' draggable="false" className="ZoomImage" />
               </Box>
-              <Flex justifyContent='space-between' fontSize={{ base: '15px', md: '18px' }} fontWeight='620'>
+              <Flex justifyContent='space-between' fontSize={{ base: '15px', md: '18px' }} fontWeight='620' mt='10px'>
                 <Text>{elem.title}</Text>
                 <Text>{elem.price}</Text>
               </Flex>

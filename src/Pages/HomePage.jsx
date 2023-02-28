@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import SeventyPercentSection from "../Components/SeventyPercent";
 import TodaysBestDeal from "../Components/TodaysBestDeals";
 import TopCategories from "../Components/TopCategories";
+import WeeklyPopular from "../Components/WeeklyPopular";
 
 export default function HomePage (){
     return (
@@ -14,6 +15,7 @@ export default function HomePage (){
         <TodaysBestDeal/>
         <ChooseByBrand/>
         <SeventyPercentSection/>
+        <WeeklyPopular/>
         </>
     )
 }

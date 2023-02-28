@@ -22,7 +22,7 @@
 
 @media(max-width:480px) {
     .BannerContent {
-        bottom: 180px;
+        bottom: 160px;
         left: 5px;
     }
 }

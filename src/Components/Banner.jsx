@@ -3,7 +3,7 @@ import BannerImage from '../ShopCart Banner.png'
 export default function Banner() {
     return (
         <>
-            <Box mt='-80px'>
+            <Box mt='-70px'>
                 <Image src={BannerImage} alt='Banner' width='100%' />
                 <Box className="BannerContent" color='#003d29' width={{ base: '60%', md: '50%', lg: '40%' }} >
                     <Text fontSize={{ base: '18px', md: '35px', lg: '60px' }} fontWeight='700'>Shopping And Department Store.</Text>

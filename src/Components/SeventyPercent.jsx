@@ -53,8 +53,8 @@ export default function SeventyPercentSection() {
                             <Text fontSize={{ base: '28px', md : '45px'}} fontWeight='650' color={item.color}>{item.price}</Text>
                             <Text fontSize={{ base: '17px' }}>{item.desc}</Text>
                         </Box>
-                        <Box >
-                            <Image src={item.img} alt={item.desc} width='100%'  borderBottomRadius='10px'/>
+                        <Box className="ZoomImageBox">
+                            <Image src={item.img} alt={item.desc} width='100%'  borderBottomRadius='10px' className="ZoomImage"/>
                         </Box>
                     </Box>
                 })}

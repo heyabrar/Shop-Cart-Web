@@ -67,7 +67,7 @@ export default function Navbar() {
                                     <hr />
                                     <SimpleGrid columns={[2, 2, 2, 2]} gap='30px'>
                                         {PopularCategories.length > 0 && PopularCategories.map((elem) => {
-                                            return <Flex bg='#f5f6f6' padding='5px' gap='15px' mt='10px'>
+                                            return <Flex bg='#f5f6f6' padding='5px' gap='15px' mt='10px' key={elem.id}>
                                                 <Image src={elem.image} />
                                                 <Box cursor='pointer'>
                                                     <Text>{elem.title}</Text>

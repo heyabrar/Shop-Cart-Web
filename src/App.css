@@ -4,6 +4,21 @@
     left: 120px;
 }
 
+.ZoomImageBox{
+    transition: 0.5s all ease-in-out;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.ZoomImage{
+    transition: 0.5s all ease-in-out;
+}
+
+.ZoomImage:hover {
+    transform: scale(1.5);
+  }
+
 @media(max-width:480px){
     .BannerContent { 
         bottom: 180px;

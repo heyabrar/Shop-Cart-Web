@@ -57,9 +57,9 @@ export default function ChooseByBrand() {
                 <Text fontSize={{ base: '22px', md: '28px' }} fontWeight='700'>Choose By Brand</Text>
                 <SimpleGrid columns={[1, 2, 2, 4]} rowGap='15px' mt='20px'>
                     {Brands.map((elem) => {
-                        return <Flex key={elem.id} width={{ base: '95%' }} m='auto' gap='20px' padding='20px' bg='#f5f6f6' borderRadius='10px'>
-                            <Box >
-                                <Image src={elem.img} alt={elem.title} />
+                        return <Flex key={elem.id} width={{ base: '95%' }} m='auto' gap='20px' padding='20px' bg='#f5f6f6' borderRadius='10px' _hover={{border : '1px solid black'}}>
+                            <Box className="ZoomImageBox">
+                                <Image src={elem.img} alt={elem.title} className='ZoomImage'/>
                             </Box>
 
                             <Box>

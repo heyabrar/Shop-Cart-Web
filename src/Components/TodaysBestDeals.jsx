@@ -48,7 +48,7 @@ export default function TodaysBestDeal() {
     ]
     return (
         <>
-            <Box width={{ base: '95%', md: '92%', lg: '85%' }} m='auto' mt={{ base: '20px', md: '45px', lg: '80px' }} border='1px solid red'>
+            <Box width={{ base: '95%', md: '92%', lg: '85%' }} m='auto' mt={{ base: '20px', md: '45px', lg: '80px' }}>
                 <Text fontSize={{ base: '22px', md: '28px' }} fontWeight='700'>Todays Best Deals For You!</Text>
                 <Box mt='30px'>
                     <CarouselComponent data={BestDeals} itemsBase={2} itemsMd={3} itemsLg={3} />

@@ -7,7 +7,6 @@
 .ZoomImageBox {
     transition: 1.5s all ease-in-out;
     overflow: hidden;
-    margin: 0 auto;
     border-radius: 10px;
 }
 

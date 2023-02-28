@@ -7,21 +7,23 @@ import SeventyPercentSection from "../Components/SeventyPercent";
 import TodaysBestDeal from "../Components/TodaysBestDeals";
 import TodaysDeals from "../Components/TodaysDeals";
 import TopCategories from "../Components/TopCategories";
+import TrendingProducts from "../Components/TrendingProducts";
 import WeeklyPopular from "../Components/WeeklyPopular";
 
-export default function HomePage (){
+export default function HomePage() {
     return (
         <>
-        <Navbar/>
-        <Banner/>
-        <TopCategories/>
-        <TodaysBestDeal/>
-        <ChooseByBrand/>
-        <SeventyPercentSection/>
-        <WeeklyPopular/>
-        <TodaysDeals/>
-        <CashBackBanner/>
-        <MostSelling/>
+            <Navbar />
+            <Banner />
+            <TopCategories />
+            <TodaysBestDeal />
+            <ChooseByBrand />
+            <SeventyPercentSection />
+            <WeeklyPopular />
+            <TodaysDeals />
+            <CashBackBanner />
+            <MostSelling />
+            <TrendingProducts />
         </>
     )
 }

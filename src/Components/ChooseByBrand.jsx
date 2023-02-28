@@ -53,13 +53,14 @@ export default function ChooseByBrand() {
     ]
     return (
         <>
-            <Box width={{ base: '90%', lg: '85%' }} m='auto' mt={{ base: '60px', md: '25px', lg: '80px' }}>
+            <Box width={{ base: '95%',md: '92%', lg: '85%' }} m='auto' mt={{ base: '60px', md: '25px', lg: '80px' }} >
                 <Text fontSize={{ base: '22px', md: '28px' }} fontWeight='700'>Choose By Brand</Text>
-                <SimpleGrid columns={[1, 2, 2, 4]} rowGap='15px' mt='20px'>
+            </Box>
+                <SimpleGrid columns={[1, 2, 2, 4]} rowGap='15px'  width={{base :'95%', lg: '85%'}}  m='auto' mt='20px' >
                     {Brands.map((elem) => {
-                        return <Flex key={elem.id} width={{ base: '95%' }} m='auto' gap='20px' padding='20px' bg='#f5f6f6' borderRadius='10px' _hover={{border : '1px solid black'}}>
-                            <Box className="ZoomImageBox">
-                                <Image src={elem.img} alt={elem.title} className='ZoomImage'/>
+                        return <Flex key={elem.id} width={{ base: '90%' }} m='auto' justifyContent='space-evenly' alignItems='center'  bg='#f5f6f6' borderRadius='10px' _hover={{border : '1px solid black'}}>
+                            <Box className="ZoomImageBox" width={{base: '30%'}} >
+                                <Image src={elem.img} alt={elem.title} className='ZoomImage' m='auto'/>
                             </Box>
 
                             <Box>
@@ -69,7 +70,6 @@ export default function ChooseByBrand() {
                         </Flex>
                     })}
                 </SimpleGrid>
-            </Box>
         </>
     )
 }

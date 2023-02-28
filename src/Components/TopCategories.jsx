@@ -37,7 +37,8 @@ export default function TopCategories() {
         <>
             <Box width={{ base: '95%', lg: '85%' }} m='auto' mt={{ base: '-130px', md: '-210px', lg: '-250px' }}>
                 <Text fontSize={{ base: '22px', md: '28px' }} fontWeight='700'>Shop Our Top Categories</Text>
-                <SimpleGrid columns={[2, 2, 3, 6]} columnGap='10px'>
+            </Box>
+                <SimpleGrid columns={[2, 2, 3, 6]} columnGap='10px' width={{base : '95%', lg: '85%'}} m='auto'>
                     {TopCategories.map((elem) => {
                         return <Box key={elem.id}>
                             <Text position='relative' top={{ base: '45px' }} left={{ base: '15px', md: '65px' }} fontSize={{ base: '18px', md: '22px' }} color='white' fontWeight='650'>{elem.title}</Text>
@@ -47,7 +48,6 @@ export default function TopCategories() {
                         </Box>
                     })}
                 </SimpleGrid>
-            </Box>
         </>
     )
 }
